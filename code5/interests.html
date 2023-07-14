@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interests Page</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body onload="loadHidden()">
+    <header>
+        <div class="top">
+            <a class="logo" href="index.html">CapellaVolunteers<span class="dotcom">.org</span></a>
+        </div>
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="invitation.html">Invitation</a>
+                </li>
+                <li><a href="gallery.html">Gallery</a>
+                </li>
+                <li><a href="registration.html" class="active">Registration</a>
+                </li>
+            </ul>
+
+        </nav>
+        <h3>Select your Interest(s)</h3>
+    </header>
+    //allow values to be passed as hidden 
+    //add a chekbox for each interest defined
+    <div id="hidden">
+        <input type="hidden" id="userName">
+        <input type="hidden" id="password">
+        <input type="hidden" id="firstName">
+        <input type="hidden" id="lastName">
+        <input type="hidden" id="email">
+        <input type="hidden" id="phoneNumber">
+        <input type="hidden" id="signUpNewsletter">
+    </div>
+    <section id="pageForm">
+        <form action="confirm.html">
+            <input type="checkbox" id="interest1"> Wildlife<br>
+            <input type="checkbox" id="interest2"> Cooking<br>
+            <input type="checkbox" id="interest3"> Hiking<br> 
+            <input type="checkbox" id="interest4"> Boating<br>
+            <input type="submit" />
+        </form>
+    </section>
+
+    <div style="text-align: center;">This events site is for IT-FP3215 tasks.
+    </div>
+
+    <script src="js/interests.js"></script>
+</body>
+</html>

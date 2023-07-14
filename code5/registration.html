@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body onload="//debug()"> <!-- //rec -->
+    <header>
+        <div class="top">
+            <a class="logo" href="index.html">CapellaVolunteers<span class="dotcom">.org</span></a>
+        </div>
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="invitation.html">Invitation</a>
+                </li>
+                <li><a href="gallery.html">Gallery</a>
+                </li>
+                <li><a href="registration.html" class="active">Registration</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <section id="pageForm">
+        <form action="interests.html"> <!-- //rec url?userName=abc&password=8hwj288&... <-- querystring-->
+            //set form for input with space for errors and color
+            <div>
+                <label for="userName" style="display: inline-block; width: 15%">*Username:</label>
+                <input type="text" name="userName" placeholder="Enter your Username" style="width: 30%">
+                <span id="userName" style="color:red"></span>
+            </div>
+
+            <div>
+                <label for="Password" style="display: inline-block; width: 15%">*Password:
+                </label>
+                <input type="password" name="password" placeholder="Enter your Password" style="width: 30%">
+                <span id="password" style="color:red"></span>
+            </div>
+
+            <div>
+                <label for="passwordVerify" style="display: inline-block; width: 15%">*Verify your Password:
+                </label>
+                <input type="password" name="passwordVerify" placeholder="Enter in your Password again" style="width: 30%">
+                <span id="passwordVerify" style="color:red"></span>
+            </div>
+
+            <div>
+                <label for="firstName" style="display: inline-block; width: 15%">*First Name:
+                </label>
+                <input type="text" name="firstName" placeholder="Enter your First Name" style="width: 30%">
+                <span id="firstName" style="color:red"></span>
+            </div>
+
+            <div">
+                <label for="lastName" style="display: inline-block; width: 15%">*Last Name:
+                </label>
+                <input type="text" name="lastName" placeholder="Enter your Last Name" style="width: 30%">
+                <span id="lastName" style="color:red"></span>
+            </div>
+
+            <div>
+                <label for="email" style="display: inline-block; width: 15%">Email:
+                </label>
+                <input type="text" name="email" placeholder="Enter your Email Address" style="width: 30%">
+                <span id="email" style="color:red"></span>
+            </div>
+
+            <div>
+                <label for="phoneNumber" style="display: inline-block; width: 15%">Phone Number
+                </label>
+                <input type="text" name="phoneNumber" placeholder="Enter your Phone Number" style="width: 30%">
+                <span id="phoneNumber" style="color:red"></span>
+            </div>
+
+            <div>
+                <label for="signUpNewsletter" style="display: inline-block; width: 15%">Sign up for newsletter:
+                </label>
+			    <input type="radio" name="signUpNewsletter" value="Yes" checked=""> Yes 
+			    <input type="radio" name="signUpNewsletter" value="No"> No
+            </div>
+            <input type="submit" value="Next step"> <!-- //rec -->
+        </form>
+    </section>
+
+    <div style="text-align: center;">This events site is for IT-FP3215 tasks.
+    </div>
+
+<script src="js/registration.js"></script>
+</body></html>
